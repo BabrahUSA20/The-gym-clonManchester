@@ -6,20 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mancheste</title>
     <!-- <link rel="stylesheet" href="./src/output.css"> -->
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="/src/output.css" rel="stylesheet">
 </head>
 
 <body class="">
     <!-- mx-auto -->
     <div class="logo p-5 flex flex-row justify-between ">
-        <div class="">
+        <div class="flex justify-between">
             <img src="./image/logo-university-of-manchester.png" alt="logo"
                 class="w-[75%] sm:w-[70%] md:w-[70%] lg:w-[70%] xl:w-[70%]">
+                <div class="text-red-700 md:hidden ">
+                    <i class='bx bx-menu text-red-700' ></i>
+                </div>
         </div>
-        <div class="flex flex-row gap-8">
-            <img src="./image/icon-search-mobile.png" alt="search" class=" h-[20px] w-[20px] mt-3">
-            <img src="./image/icon-menu.gif" alt="" class=" h-[25px] w-[25px] mt-3">
+
+
+        <div class="hidden flex flex-row md:block" >
+            <!-- <img src="./image/icon-home-25px-949699.png" alt="home" class="w-[35px] h-[35px]"> -->
+            <ul class=" font-sans text-[24px] flex flex-row gap-10 text-gray-700 font-thin">
+                <li><i class='bx bx-home  text-[35px] text-gray-500 '></i></li>
+                <li>Study</li>
+                <li>Research</li>
+                <li>Collaborate</li>
+                <li>About</li>
+                <li>Connect</li>
+            </ul>
         </div>
+       
+
+        <!-- <div class="lg:hidden block">
+            <i class='bx bx-menu hidden' ></i>
+            
+
+            <img src="./image/icon-search-mobile.png" alt="search" class=" h-[20px] w-[20px] mt-3 lg:hidden">
+            <img src="./image/icon-menu.gif" alt="" class=" h-[25px] w-[25px] mt-3 lg:hidden">
+        </div> -->
 
     </div>
     <div class=" ">
@@ -55,7 +77,7 @@
                         class=" relative w-[420px] text-black-800 bg-white rounded-md font-thin h-[35px]">
                     <img src="./image/menu-arrow-down-open-grey.png" alt="list"
                         class=" absolute ml-100 mt-3 w-[2%] text-black-200"> -->
-                        <select name="" id="" class="border-black border border-2 bg-white rounded-md font-thin flex gap-20 justify-between w-[420px] h-[35px]">
+                        <select name="" id="" class="border-black  border-2 bg-white rounded-md font-thin flex gap-20 justify-between w-[420px] h-[35px]">
                             <option value="">Undergraduate</option>
                             <option value="">Taught Master's</option>
                             <option value="">Postgraduate reseach</option>
@@ -108,18 +130,18 @@
                 strategy.</p> -->
 
                     <p
-                        class=" absolute h-[50px] w-3/5 inset-x-0 inset-y-[225px] font-light text-[18px]  p-3 h-30 bg-white">
+                        class=" absolute w-3/5 inset-x-0 inset-y-[225px] font-light text-[18px]  p-3 h-30 bg-white">
                         Guided tours of campus</p>
 
                 </div>
 
                 <div class="relative">
                     <img src="/image/Bicentenary-PhD-Studentships-500x298.jpeg" alt="image"
-                        class=" h-full w-full object-cover  w-63">
+                        class=" h-full w-full object-cover  ">
 
 
                     <p
-                        class=" absolute h-[50px] w-3/5 inset-x-0 inset-y-[225px] text-[18px] font-light  p-3 h-30 bg-white">
+                        class=" absolute  w-3/5 inset-x-0 inset-y-[225px] text-[18px] font-light  p-3 h-30 bg-white">
                         Bicentenary PhD Studentship</p>
 
                 </div>
@@ -129,7 +151,7 @@
                     <!-- <p class="text-[20px]">Use our online tool to provide your feedback and help us shape our Manchester 2035
                 strategy.</p> -->
                     <p
-                        class=" absolute h-[50px] w-3/5 inset-x-0 inset-y-[225px] text-[18px] font-light p-3 h-30 bg-white">
+                        class=" absolute h-[50px] w-3/5 inset-x-0 inset-y-[225px] text-[18px] font-light p-3  bg-white">
                         Our bicentenary highlighs</p>
 
                 </div>
@@ -153,12 +175,12 @@
         <div class=" m-5  -mt-5 flex flex-col gap-5 justify-between text-gray-800 ">
             <div class="relative flex flex-col gap-10">
                 <img src="./image/Manchester-Skyline-500x298.jpeg" alt="image"
-                    class=" h-full w-full object-cover h-60 w-63">
+                    class=" h-full w-full object-cover ">
 
                 <!-- <p class="text-[20px]">Use our online tool to provide your feedback and help us shape our Manchester
                 2035 strategy.</p> -->
 
-                <p class=" absolute h-[50px] w-2/5 inset-x-0 inset-y-[235px]  text-[18px]  p-3 h-30 bg-gray-200">
+                <p class=" absolute h-[50px] w-2/5 inset-x-0 inset-y-[235px]  text-[18px]  p-3  bg-gray-200">
                     Research
                     beacons</p>
 
@@ -166,10 +188,10 @@
 
             <div class="relative flex flex-col gap-10">
                 <img src="./image/research-impact-promo-(500x298).jpeg" alt="image"
-                    class=" h-full w-full object-cover  w-63">
+                    class=" h-full w-full object-cover  ">
                 <!-- <p class=" text-[20px]">Use our online tool to provide your feedback and help us shape our Manchester
                 2035 strategy.</p> -->
-                <p class=" absolute h-[50px] w-1/5 inset-x-0 inset-y-[235px] text-[18px]  p-3 h-30 bg-gray-200">impact
+                <p class=" absolute h-[50px] w-1/5 inset-x-0 inset-y-[235px] text-[18px]  p-3  bg-gray-200">impact
                 </p>
 
             </div>
@@ -177,7 +199,7 @@
                 <img src="./image/uom-research-people-row.jpeg" alt="image" class=" h-full w-full object-cover">
                 <!-- <p class="text-[20px]">Use our online tool to provide your feedback and help us shape our Manchester
                 2035 strategy.</p> -->
-                <p class=" absolute h-[50px] w-2/5 inset-x-0 inset-y-[235px] text-[18px]  p-3 h-30 bg-gray-200">Research
+                <p class=" absolute h-[50px] w-2/5 inset-x-0 inset-y-[235px] text-[18px]  p-3 bg-gray-200">Research
                     Explorer</p>
             </div>
         </div>
@@ -206,7 +228,7 @@
         <div class=" m-5  -mt-5 flex flex-col gap-5 justify-between text-gray-800 ">
             <div class="relative flex flex-col gap-10">
                 <img src="./image/Melbourne---denise-jans--gmtAa0Q5MI-unsplash-500x298-edited-250121.jpg" alt="image"
-                    class=" h-full w-full object-cover h-60 w-63">
+                    class=" h-full w-full object-cover ">
 
                 <!-- <p class="text-[20px]">Use our online tool to provide your feedback and help us shape our Manchester
                 2035 strategy.</p> -->
@@ -217,10 +239,10 @@
 
             <div class="relative flex flex-col gap-10">
                 <img src="./image/international-centres-7.11.18.jpg" alt="image"
-                    class=" h-full w-full object-cover  w-63">
+                    class=" h-full w-full object-cover ">
                 <!-- <p class=" text-[20px]">Use our online tool to provide your feedback and help us shape our Manchester
                 2035 strategy.</p> -->
-                <p class=" absolute h-[50px] w-3/5 inset-x-0 inset-y-[235px] text-[18px]  p-3 h-30 bg-gray-200">Global
+                <p class=" absolute  w-3/5 inset-x-0 inset-y-[235px] text-[18px]  p-3 h-30 bg-gray-200">Global
                     centres
                 </p>
 
@@ -230,7 +252,7 @@
                     class=" h-full w-full object-cover">
                 <!-- <p class="text-[20px]">Use our online tool to provide your feedback and help us shape our Manchester
                 2035 strategy.</p> -->
-                <p class=" absolute h-[50px] w-3/5 inset-x-0 inset-y-[235px] text-[18px]  p-3 h-30 bg-gray-200">
+                <p class=" absolute h-[50px] w-3/5 inset-x-0 inset-y-[235px] text-[18px]  p-3  bg-gray-200">
                     Indernational callaboration
                 </p>
             </div>
@@ -252,17 +274,17 @@
                 <!-- <p class="text-[20px]">Use our online tool to provide your feedback and help us shape our Manchester 2035
             strategy.</p> -->
 
-                <p class=" absolute h-[50px] w-3/5 inset-x-0 inset-y-[225px] font-light text-[18px]  p-3 h-30 bg-white">
+                <p class=" absolute h-[50px] w-3/5 inset-x-0 inset-y-[225px] font-light text-[18px]  p-3  bg-white">
                     Services for Business</p>
 
             </div>
 
             <div class="relative">
                 <img src="/image/Bicentenary-PhD-Studentships-500x298.jpeg" alt="image"
-                    class=" h-full w-full object-cover  w-63">
+                    class=" h-full w-full object-cover  ">
 
 
-                <p class=" absolute h-[50px] w-1/5 inset-x-0 inset-y-[225px] text-[18px] font-light  p-3 h-30 bg-white">
+                <p class=" absolute h-[50px] w-1/5 inset-x-0 inset-y-[225px] text-[18px] font-light  p-3  bg-white">
                     Policy</p>
 
             </div>
@@ -271,11 +293,11 @@
                     class=" h-full w-full object-cover">
                 <!-- <p class="text-[20px]">Use our online tool to provide your feedback and help us shape our Manchester 2035
             strategy.</p> -->
-                <p class=" absolute h-[50px] w-2/5 inset-x-0 inset-y-[225px] text-[18px] font-light p-3 h-30 bg-white">
+                <p class=" absolute h-[50px] w-2/5 inset-x-0 inset-y-[225px] text-[18px] font-light p-3  bg-white">
                     Give to Manchester</p>
 
             </div>
-
+           
         </div>
 
 
@@ -284,9 +306,20 @@
 
     <div class="About bg-gray-200 font-sans">
         <p class="text-[30px] font-extralight m-5">About</p>
-        <div>
+        <div class="flex gap-8 justify-center h-[300px]">
+            <div class="flex gap-3 flex-col">
+            <a class="border-2 h-[50px] w-[30px] mt-6 rounded-full justify-center text-center items-center gap-3 flex flex-col shadow-2xl bg-gray-500 "
+                href="">
 
+                <i class='bx bx-map border-2  text-[35px] text-center text-white p-10 w-[80px] h-[100px] rounded-full bg-[#0171F7]'></i>
+
+                
+            </a>
+            <p class=" text-[20px] font-thin  shadow-black">Map</p>
         </div>
+            <i class='bx bx-calendar text-[35px] text-center text-white p-10 w-[80px] h-[100px] rounded-full bg-[#0171F7]'></i>
+            <i class='bx bx-home text-[35px] text-center text-white p-10 w-[80px] h-[100px] rounded-full bg-[#0171F7]'></i>
+                </div>
 
     </div>
 
@@ -301,16 +334,16 @@
                 <!-- <p class="text-[20px]">Use our online tool to provide your feedback and help us shape our Manchester 2035
             strategy.</p> -->
 
-                <p class=" absolute h-[50px] w-1/5 inset-x-0 inset-y-[225px] font-light text-[18px]  p-3 h-30 bg-white">
+                <p class=" absolute h-[50px] w-1/5 inset-x-0 inset-y-[225px] font-light text-[18px]  p-3  bg-white">
                     Jobs</p>
 
             </div>
 
             <div class="relative">
-                <img src="/image/Alumni.jpeg" alt="image" class=" h-full w-full object-cover  w-63">
+                <img src="/image/Alumni.jpeg" alt="image" class=" h-full w-full object-cover  ">
 
 
-                <p class=" absolute h-[50px] w-1/5 inset-x-0 inset-y-[225px] text-[18px] font-light  p-3 h-30 bg-white">
+                <p class=" absolute h-[50px] w-1/5 inset-x-0 inset-y-[225px] text-[18px] font-light  p-3  bg-white">
                     Alumni
                 </p>
 
@@ -319,7 +352,7 @@
                 <img src="/image/Teachers-Careers.jpeg" alt="image" class=" h-full w-full object-cover">
                 <!-- <p class="text-[20px]">Use our online tool to provide your feedback and help us shape our Manchester 2035
             strategy.</p> -->
-                <p class=" absolute h-[50px] w-3/5 inset-x-0 inset-y-[225px] text-[18px] font-light p-3 h-30 bg-white">
+                <p class=" absolute h-[50px] w-3/5 inset-x-0 inset-y-[225px] text-[18px] font-light p-3  bg-white">
                     Teachers and careers advisers</p>
 
             </div>
