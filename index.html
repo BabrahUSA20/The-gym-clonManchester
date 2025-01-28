@@ -5,13 +5,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mancheste</title>
-    <!-- <link rel="stylesheet" href="./src/output.css"> -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  
      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="/src/output.css" rel="stylesheet">
 </head>
 
-<body class="">
-    <!-- mx-auto -->
+<body >
+
+<nav class=" m-5 p-5 bg-white shadow md:flex md:items-center md:justify-between">
+    <div class=" flex justify-between items-center">
+        <span class="">
+            <img class="h-20" src="/image/logo-university-of-manchester.png" alt="">
+        </span>
+        <span class=" cursor-pointer mx-2 md:hidden block text-[30px] text-gray-500 font-bold">
+            <ion-icon name="search-outline"></ion-icon>
+            <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
+
+        </span>
+    </div>
+
+    <ul class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px]
+        transition-all ease-in duration-500">
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-xl hover:text-cyan-500 duration-500">HOME</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-xl hover:text-cyan-500 duration-500">Study</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-xl hover:text-cyan-500 duration-500">Research</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-xl hover:text-cyan-500 duration-500">Collaborate</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-xl hover:text-cyan-500 duration-500">About </a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-xl hover:text-cyan-500 duration-500">Connect</a>
+            </li>
+            <button class="bg-cyan-400 text-white font-[Poppins] duration-500 px-6  py-2 mx-4 hover:bg-cyan-500 rounded">
+               Get started 
+            </button>
+        </ul>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- mx-auto
     <div class="logo p-5 flex flex-row justify-between ">
         <div class="flex justify-between">
             <img src="./image/logo-university-of-manchester.png" alt="logo"
@@ -23,7 +77,7 @@
 
 
         <div class="hidden flex flex-row md:block" >
-            <!-- <img src="./image/icon-home-25px-949699.png" alt="home" class="w-[35px] h-[35px]"> -->
+            <img src="./image/icon-home-25px-949699.png" alt="home" class="w-[35px] h-[35px]">
             <ul class=" font-sans text-[24px] flex flex-row gap-10 text-gray-700 font-thin">
                 <li><i class='bx bx-home  text-[35px] text-gray-500 '></i></li>
                 <li>Study</li>
@@ -35,15 +89,22 @@
         </div>
        
 
-        <!-- <div class="lg:hidden block">
+        <div class="lg:hidden block">
             <i class='bx bx-menu hidden' ></i>
             
 
             <img src="./image/icon-search-mobile.png" alt="search" class=" h-[20px] w-[20px] mt-3 lg:hidden">
             <img src="./image/icon-menu.gif" alt="" class=" h-[25px] w-[25px] mt-3 lg:hidden">
-        </div> -->
+        </div>
 
-    </div>
+    </div> -->
+
+
+
+
+
+
+
     <div class=" ">
         <img src="./image/student-life-smaller.jpeg" alt="background" class=" h-full w-full">
         <div class=" font-sans bg-gray-200 p-3">
